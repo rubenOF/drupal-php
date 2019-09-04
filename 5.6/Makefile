@@ -9,6 +9,8 @@ NAME = drupal-php-$(PHP_VER)
 ifeq ($(TAG),)
     ifneq ($(PHP_DEV_MACOS),)
     	TAG = $(PHP_VER)-dev-macos
+    else ifneq ($(PHP_COREOS),)
+        TAG = $(PHP_VER)-coreos
     else ifneq ($(PHP_DEV),)
         TAG = $(PHP_VER)-dev
     else
@@ -19,6 +21,9 @@ endif
 ifneq ($(PHP_DEV_MACOS),)
     NAME := $(NAME)-dev-macos
     BASE_IMAGE_TAG := $(BASE_IMAGE_TAG)-dev-macos
+else ifneq ($(PHP_COREOS),)
+    NAME := $(NAME)-coreos
+    BASE_IMAGE_TAG := $(BASE_IMAGE_TAG)-coreos
 else ifneq ($(PHP_DEV),)
     NAME := $(NAME)-dev
     BASE_IMAGE_TAG := $(BASE_IMAGE_TAG)-dev

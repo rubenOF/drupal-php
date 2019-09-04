@@ -17,6 +17,10 @@ env:
   - PHP_VER=7.2 PHP_DEV_MACOS=1 TAGS=7.2-dev-macos
   - PHP_VER=7.1 PHP_DEV_MACOS=1 TAGS=7.1-dev-macos
   - PHP_VER=5.6 PHP_DEV_MACOS=1 TAGS=5.6-dev-macos,5-dev-macos
+  - PHP_VER=7.3 PHP_COREOS=1 TAGS=7.3-coreos,7-coreos,coreos
+  - PHP_VER=7.2 PHP_COREOS=1 TAGS=7.2-coreos
+  - PHP_VER=7.1 PHP_COREOS=1 TAGS=7.1-coreos
+  - PHP_VER=5.6 PHP_COREOS=1 TAGS=5.6-coreos,5-coreos
 
 script:
 - cd "${PHP_VER}" || cd "${PHP_VER:0:1}"

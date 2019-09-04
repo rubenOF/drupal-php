@@ -30,6 +30,10 @@ Supported tags and respective `Dockerfile` links:
 * `7.2-dev-macos` [_(7/Dockerfile)_]
 * `7.1-dev-macos` [_(7/Dockerfile)_]
 * `5.6-dev-macos`, `5-dev-macos` [_(5.6/Dockerfile)_]
+* `7.3-coreos`, `7-coreos`, `coreos` [_(7/Dockerfile)_]
+* `7.2-coreos` [_(7/Dockerfile)_]
+* `7.1-coreos` [_(7/Dockerfile)_]
+* `5.6-coreos`, `5-coreos` [_(5.6/Dockerfile)_]
 
 See [wodby/php](https://github.com/wodby/php) for the exact PHP version
 
